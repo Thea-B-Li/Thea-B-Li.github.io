@@ -1,27 +1,104 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=400px, initial-scale=1">
     <title>Thea Li - Homepage</title>
     <style>
-      h1 {text-align: center;}
-      p {text-align: center;}
-      nav {text-align: center;}
-      ul {list-style: none;}
+      * {
+      box-sizing: border-box;
+      }
+
+      a {
+      color: white;
+      }
+
+      a:link {
+      text-decoration: none;
+      color: white;
+      }
+
+      a:visited {
+      text-decoration: none;
+      }
+
+      a:hover {
+      text-decoration: underline;
+      }
+
+      a:active {
+      text-decoration: underline;
+      }
+
+
+      /* h1 {text-align: center;} */
+      p {text-align: center; width: 100px}
+      /* nav {text-align: center;} */
+      /* ul {list-style: dot;} */
+    body{background-color: rgb(32, 35, 36);
+      /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" ; */
+      font-size:   16px ;
+      font-weight: 400 ;
+      line-height: 1.5 ;
+      color: white;
+      border-style: none;
+      margin: 0px;
+      padding-top: 150px;
+      padding-bottom: 150px;
+      height: 100%;
+    }
+      /* display: flex;
+      min-height: 100vh;} */
+
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+    /* height: 300px; Should be removed. Only for demonstration */
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .wrapper {
+      width: 100px;
+    }
     </style>
   </head>
-
+  <!-- src=Untitled.jpeg width="500" height="600" -->
+<div class="home">
   <body>
-    <h1>Thea Li</h1>
-    <p>website under construction...</p>
+    <div class="row">
+      <div class="column">
+        <img src=Untitled.jpeg width="300" style="float:right" >
+      </div>
+      <div class="column">
+        <h1>Thea Li</h1>
+        <h4> Cat(egory theory) enthusiast </h4>
+        <div class="wrapper">
+          <!-- <p> -->
+            <p></p>
+
+        <!-- </p> -->
+        </div>
+        <nav>
+          <ul>
+            <li><a href="CV.pdf">CV</a></li>
+            <li><a href="publications.html">Publications & Talks</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </body>
+</div>
 
-  <img src=Untitled.jpeg width="500" height="600">
 
-  <nav>
-    <ul>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+
+
+
+
 
 </html>
